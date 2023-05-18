@@ -116,6 +116,9 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/nesbot/carbon" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/inertiajs/inertia-laravel" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/tightenco/ziggy" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/breeze" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

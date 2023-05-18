@@ -110,6 +110,9 @@
       <path value="$PROJECT_DIR$/src/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/src/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/src/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/src/vendor/inertiajs/inertia-laravel" />
+      <path value="$PROJECT_DIR$/src/vendor/tightenco/ziggy" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/breeze" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
