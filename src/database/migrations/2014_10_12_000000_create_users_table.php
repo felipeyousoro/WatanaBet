@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nickname');
             $table->string('email')->unique();
             $table->string('password');
+            $table->decimal('balance', 10, 2)->default(0);
             $table->string('profile_photo_path', 2048)->nullable();
             $table->rememberToken();
             $table->timestamps();

@@ -11,8 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('anime_teams_log', function (Blueprint $table) {
+        Schema::create('watanabet.anime_teams', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('team_photo_path', 2048)->nullable();
             $table->timestamps();
         });
     }
@@ -22,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('anime_teams_log');
+        Schema::dropIfExists('anime_teams');
     }
 };

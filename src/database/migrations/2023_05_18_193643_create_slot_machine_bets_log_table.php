@@ -13,8 +13,12 @@ return new class extends Migration
     {
         Schema::create('watanabet.slot_machine_bets_log', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('users_id')->constrained('watanabet.users');
-            $table->foreignId('slot_machine_results_id')->constrained('watanabet.slot_machine_results');
+            $table->foreignId('users_id')
+                ->constrained('watanabet.users')
+                ->onDelete('cascade');
+            $table->foreignId('slot_machine_results_id')
+                ->constrained('watanabet.slot_machine_results')
+                ->onDelete('cascade');
             $table->decimal('bet_amount', 10, 2);
             $table->decimal('win_amount', 10, 2);
             $table->timestamps();

@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('roketto_log', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('users_id')
+                ->constrained('users')
+                ->onDelete('cascade');
+            $table->decimal('bet_amount', 10, 2);
+            $table->decimal('win_amount', 10, 2);
             $table->timestamps();
         });
     }
