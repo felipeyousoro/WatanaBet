@@ -11,9 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('anime_matches_results_log', function (Blueprint $table) {
+        Schema::create('watanabet.watanagacha_log', function (Blueprint $table) {
             $table->id();
-
+            $table->foreignId('user_id')->constrained('watanabet.users');
+            $table->foreignId('reward_id')->constrained('watanabet.watanagacha_rewards');
             $table->timestamps();
         });
     }
@@ -23,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('anime_matches_results_log');
+        Schema::dropIfExists('watanabet.watanagacha_log');
     }
 };
